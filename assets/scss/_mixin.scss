@@ -1,0 +1,28 @@
+@mixin asb-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex($alight, $justify) {
+  display: flex;
+  align-items: $alight;
+  justify-content: $justify;
+}
+
+@mixin grid($size) {
+  display: grid;
+  grid-template-columns: repeat($size, 1fr);
+}
+
+@mixin table {
+  @media screen and (max-width: $size-table) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: $size-mobile) {
+    @content;
+  }
+}

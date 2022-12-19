@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>VCB Marathon</title>
+  </head>
+  <body>
+    <div class="root">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header-box container">
+            <div class="header-right">
+              <div class="header-logo">
+                <img src="./assets/img/Logo.png" alt="Logo Vietcombank" />
+              </div>
+              <ul class="header-nav">
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">Chặng TP.HCM</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">Chặng Hà Nội</a>
+                </li>
+                <li class="header-nav-item">
+                  <div  id="a" class="header-nav-link"
+                    >Các Chặng Khác
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                    <div class="sub-menu">
+                      <div class="sub-left">
+                        <div class="sub-action">
+                          <input type="text" placeholder="Tìm kiếm nhanh" />
+                          <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                      </div>
+                      <div class="sub-menu-item">
+                        <a href="#" class="sub-menu-link">Hà nội</a>
+                        <a href="#" class="sub-menu-link">Hồ Chí Minh</a>
+                        <a href="#" class="sub-menu-link">Cà Mau</a>
+                        <a href="#" class="sub-menu-link">Bạc Liêu</a>
+                        <a href="#" class="sub-menu-link">Bạc Liêu</a>
+                        <a href="#" class="sub-menu-link">Bạc Liêu</a>
+                        <a href="#" class="sub-menu-link">Bạc Liêu</a>
+                        <a href="#" class="sub-menu-link">Bình Dương</a>
+                        <a href="#" class="sub-menu-link">Bình Dương</a>
+                        <a href="#" class="sub-menu-link">Bình Dương</a>
+                        <a href="#" class="sub-menu-link">Bình Dương</a>
+                        <a href="#" class="sub-menu-link">Bình Dương</a>
+                        <a href="#" class="sub-menu-link">Đà Nẵng</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="header-left">
+              <div class="header-action">
+                <input type="text" placeholder="Tìm kiếm nhanh" />
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <nav class="nav">
+            <div class="nav-box container">
+              <ul class="nav-menu">
+                <li class="nav-menu-item">
+                  <a href="#" class="nav-menu-link">Trang chủ</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#" class="nav-menu-link">Thông tin chương trình</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#" class="nav-menu-link">Hình ảnh</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#" class="nav-menu-link">Tin tức</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#" class="nav-menu-link">Liên hệ</a>
+                </li>
+              </ul>
+
+              <a href="" type="button" class="nav-btn">Đăng kí chạy</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <!-- BANNER -->
+      <header class="header-mobile">
+        <div class="header-mobile-box container">
+          <div class="header-logo">
+            <img src="./assets/img/Logo.png" alt="" />
+          </div>
+          <ul id="nav-menu" class="nav-menu">
+            <div class="header-left">
+              <div class="header-action">
+                <input type="text" placeholder="Tìm kiếm nhanh" />
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+            </div>
+            <details>
+              <summary>Các chặng khác</summary>
+              <a href="#" class="nav-menu-link mg">Chặng Hà Nội</a>
+              <a href="#" class="nav-menu-link mg">Chặng Hồ Chí Minh</a>
+              <a href="#" class="nav-menu-link mg">Các tỉnh khác</a>
+            </details>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link">Trang chủ</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link">Thông tin chương trình</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link">Hình ảnh</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link">Tin tức</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link">Liên hệ</a>
+            </li>
+          </ul>
+          <div class="header-mobile-menu">
+            <a href="" type="button" class="nav-btn btn-mobile">Đăng kí chạy</a>
+            <ion-icon id="toggleMenu" name="menu-outline"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- BANNER END-->
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner-desc">
+              <div class="container flex">
+                <h4 class="banner-name fz-mobile">Vietcombank marathon</h4>
+                <p class="banner-name fz-mobile">Sài Gòn 2023</p>
+                <p class="banner-date">Ngày thi đấu: 12/03/2023</p>
+                <button type="button" class="banner-btn">
+                  Đăng ký giai đoạn Super Early Bird
+                </button>
+                <div class="banner-unit">
+                  <p class="banner-unit-desc">Đơn vị tổ chức</p>
+                  <div class="banner-unit-img">
+                    <div class="banner-unit-item">
+                      <img src="./assets/img/Logo.png" alt="unit" />
+                    </div>
+                    <div class="banner-unit-item">
+                      <img src="./assets/img/logo1.png" alt="unit" />
+                    </div>
+                    <div class="banner-unit-item">
+                      <img src="./assets/img/logo2.png" alt="unit" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="banner-action container">
+        <div class="banner-action-date">
+          <p>Ngày chạy</p>
+          <div class="banner-action-place">
+            <p><span>Sài gòn</span> 12/03/2023</p>
+          </div>
+          <div class="banner-action-place">
+            <p><span>Hà nội</span> 12/03/2023</p>
+          </div>
+        </div>
+        <div class="banner-action-btn">
+          <button>
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </button>
+          <div class="banner-dot">
+            <span class="banner-dot-item active"></span>
+            <span class="banner-dot-item"></span>
+            <span class="banner-dot-item"></span>
+          </div>
+          <button id="d">
+            <span class="banner-pl">Hà nội</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <!-- Swiper JS -->
+      <!-- BANNER END -->
+      <section class="hero container">
+        <div class="hero-desc">
+          <h4 class="hero-title">Giới thiệu chương trình</h4>
+          <p class="hero-content">
+            Được tổ chức lần thứ hai tại thành phố Hồ Chí Minh, quy mô lên tới
+            hàng nghìn vận động viên đến từ trong nước và quốc tế. Giải chạy sẽ
+            mang tới tiếng vang lớn cùng những điều tuyệt vời đầy màu sắc cho
+            thành phố này và sẽ được diễn ra vào mùa hè.
+          </p>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/img/hero.png" alt="Giới thiệu" />
+        </div>
+      </section>
+      <!-- PLACE -->
+      <section class="place container">
+        <h5 class="title-center fz-mobile">Địa điểm tổ chức</h5>
+        <div class="place-list">
+          <div class="place-item">
+            <h6 class="place-item-title">Hà nội</h6>
+            <div class="place-item-img">
+              <img src="./assets/img/place1.png" alt="" />
+            </div>
+            <p class="place-item-content">
+              Ước tính số lượng VĐV dự kiến tại Hà Nội là khoảng 3,000vđv
+            </p>
+            <p class="place-item-content">Dự kiến vào ngày: 12/03/2023.</p>
+            <a href="#" class="place-item-btn"
+              >Xem chi tiết<ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="place-item">
+            <h6 class="place-item-title">Hồ Chí Minh</h6>
+            <div class="place-item-img">
+              <img src="./assets/img/place2.png" alt="" />
+            </div>
+            <p class="place-item-content">
+              Ước tính số lượng VĐV dự kiến tại Hà Nội là khoảng 3,000vđv
+            </p>
+            <p class="place-item-content">Dự kiến vào ngày: 12/03/2023.</p>
+            <a href="#" class="place-item-btn"
+              >Xem chi tiết<ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="place-item">
+            <h6 class="place-item-title">Các tỉnh khác</h6>
+            <div class="place-item-img">
+              <img src="./assets/img/place3.png" alt="" />
+            </div>
+            <p class="place-item-content">
+              Ước tính số lượng VĐV dự kiến tại Hà Nội là khoảng 3,000vđv
+            </p>
+            <p class="place-item-content">Dự kiến vào ngày: 12/03/2023.</p>
+            <a href="#" class="place-item-btn"
+              >Xem chi tiết<ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- PLACE END-->
+      <!-- ACTIVATE -->
+      <section class="activate container">
+        <h6 class="title-center fz-mobile">Lịch trình hoạt động</h6>
+        <div class="activate-btn">
+          <a href="#" class="place-item-btn">Hà Nội</a>
+          <a href="#" class="place-item-btn">Hồ Chí Ming</a>
+          <a href="#" class="place-item-btn">
+            Các tỉnh khác<ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+        <div class="ac">
+          <div class="ac-box">
+            <div class="ac-date">
+              <p class="ac-num">12</p>
+              <p><span>Tháng Ba</span> 7H30-17H</p>
+            </div>
+            <div class="ac-list">
+              <div class="ac-item">
+                <div class="ac-img">
+                  <img src="./assets/img/Ellipse.png" alt="" />
+                </div>
+                <div class="ac-desc">
+                  <h6>Racing kit</h6>
+                  <p>
+                    Sau khi đăng ký thành công các bạn đến địa điểm ban tổ chức
+                    nhận quà Racing kit bao gồm áo, huy chương, nước và nhiều
+                    điều hấp dẫn đang chờ bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ac-box">
+            <div class="ac-date">
+              <p class="ac-num">24</p>
+              <p><span>Tháng Ba</span> 7H30-17H</p>
+            </div>
+            <div class="ac-list">
+              <div class="ac-item">
+                <div class="ac-img">
+                  <img src="./assets/img/Ellipse.png" alt="" />
+                </div>
+                <div class="ac-desc">
+                  <h6>Racing kit</h6>
+                  <p>
+                    Sau khi đăng ký thành công các bạn đến địa điểm ban tổ chức
+                    nhận quà Racing kit bao gồm áo, huy chương, nước và nhiều
+                    điều hấp dẫn đang chờ bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ac-box">
+            <div class="ac-date">
+              <p class="ac-num">36</p>
+              <p><span>Tháng Ba</span> 7H30-17H</p>
+            </div>
+            <div class="ac-list">
+              <div class="ac-item">
+                <div class="ac-img">
+                  <img src="./assets/img/Ellipse.png" alt="" />
+                </div>
+                <div class="ac-desc">
+                  <h6>Racing kit</h6>
+                  <p>
+                    Sau khi đăng ký thành công các bạn đến địa điểm ban tổ chức
+                    nhận quà Racing kit bao gồm áo, huy chương, nước và nhiều
+                    điều hấp dẫn đang chờ bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="num">
+          <h6 class="title-center">Những con số biết nói</h6>
+          <div class="num-list">
+            <div class="num-item">
+              <h6>1475+</h6>
+              <p>Đã đăng ký thành công</p>
+            </div>
+            <div class="num-item">
+              <h6>1475+</h6>
+              <p>Đã đăng ký thành công</p>
+            </div>
+            <div class="num-item">
+              <h6>1475+</h6>
+              <p>Đã đăng ký thành công</p>
+            </div>
+            <div class="num-item">
+              <h6>1475+</h6>
+              <p>Đã đăng ký thành công</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ACTIVATE END -->
+      <!-- BACKGROUND IMG -->
+      <section class="bg">
+        <div class="bg-desc container">
+          <h6 class="bg-title">Vạn trái tim - Một Niềm tin</h6>
+          <p class="bg-content">
+            Nhằm kỷ niệm 60 năm thành lập Vietcombank vào ngày 31/3/2023. Khuyến
+            khích phong trào tập luyện thể thao theo tấm gương Bác Hồ vĩ đại.
+            Gắn kết cán bộ CNV, khẳng định vị thế dẫn đầu của Vietcombank
+          </p>
+          <a href="#" class="bg-btn">Tham gia ngay</a>
+        </div>
+      </section>
+
+      <!-- BACKGROUND IMG END-->
+      <section class="event">
+        <div class="event-box container">
+          <div class="event-nav">
+            <h6 class="event-titlee">SỰ KIỆN SẮP TỚI</h6>
+            <a href="#"
+              >Xem nhiều hơn <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-img">
+                <img src="./assets/img/ev1.png" alt="event" />
+              </div>
+              <h6 class="event-title">
+                Runner nước ngoài muốn trải nghiệm Vietcombank Marathon
+              </h6>
+              <div class="event-action">
+                <div class="event-date">
+                  <p><ion-icon name="pin-outline"></ion-icon>Hà nội</p>
+                  <p>
+                    <ion-icon name="calendar-clear-outline"></ion-icon
+                    >11/03/2023
+                  </p>
+                </div>
+                <a href="#"
+                  >Xem chi tiết<ion-icon name="arrow-forward-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-img">
+                <img src="./assets/img/ev1.png" alt="event" />
+              </div>
+              <h6 class="event-title">
+                Runner nước ngoài muốn trải nghiệm Vietcombank Marathon
+              </h6>
+              <div class="event-action">
+                <div class="event-date">
+                  <p><ion-icon name="pin-outline"></ion-icon>Hà nội</p>
+                  <p>
+                    <ion-icon name="calendar-clear-outline"></ion-icon
+                    >11/03/2023
+                  </p>
+                </div>
+                <a href="#"
+                  >Xem chi tiết<ion-icon name="arrow-forward-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-img">
+                <img src="./assets/img/ev1.png" alt="event" />
+              </div>
+              <h6 class="event-title">
+                Runner nước ngoài muốn trải nghiệm Vietcombank Marathon
+              </h6>
+              <div class="event-action">
+                <div class="event-date">
+                  <p><ion-icon name="pin-outline"></ion-icon>Hà nội</p>
+                  <p>
+                    <ion-icon name="calendar-clear-outline"></ion-icon
+                    >11/03/2023
+                  </p>
+                </div>
+                <a href="#"
+                  >Xem chi tiết<ion-icon name="arrow-forward-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="img">
+        <div class="container">
+          <h6 class="event-titlee">Góc ảnh đẹp</h6>
+          <div class="img-list">
+            <div class="img-item">
+              <img src="./assets/img/img1.png" alt="" />
+            </div>
+            <div class="img-item">
+              <img src="./assets/img/img2.png" alt="" />
+            </div>
+            <div class="img-item">
+              <img src="./assets/img/img3.png" alt="" />
+            </div>
+            <div class="img-item">
+              <img src="./assets/img/img4.png" alt="" />
+            </div>
+            <div class="img-item">
+              <img src="./assets/img/img5.png" alt="" />
+            </div>
+            <div class="img-item">
+              <img src="./assets/img/img6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tc">
+        <div class="container">
+          <h6 class="tc-title">Ban Tổ chức</h6>
+          <div class="tc-list1">
+            <div class="tc-item">
+              <img src="./assets/img/t.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/t1.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/t2.png" alt="" />
+            </div>
+          </div>
+          <h6 class="tc-title mg">Đồng Tổ chức</h6>
+          <div class="tc-list">
+            <div class="tc-item">
+              <img src="./assets/img/tc.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc1.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc2.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc3.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc4.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc5.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc6.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/tc7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dt">
+        <div class="container">
+          <h6 class="dt-title">Đồng Tổ chức</h6>
+          <div class="tc-list2">
+            <div class="tc-item">
+              <img src="./assets/img/dt1.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt2.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt3.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt4.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt5.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt6.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt7.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt8.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt9.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt10.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt11.png" alt="" />
+            </div>
+            <div class="tc-item">
+              <img src="./assets/img/dt12.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-wraper container">
+          <div class="footer-logo">
+            <img src="./assets/img/Group 2.png" alt="" />
+          </div>
+          <div class="footer-box">
+            <ul class="footer-nav">
+              <h6 class="footer-nav-title">Thông tin</h6>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">Trang chủ</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">Tin tức</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">Đối tác</a>
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <h6 class="footer-nav-title">Cuộc thi</h6>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">Lịch trình</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">Quy tắc điều lệ</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">Thư viện ảnh</a>
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <h6 class="footer-nav-title">Liên lạc</h6>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link"
+                  >Điên thoại chăm sóc khách hàng: 1900 633003</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link"
+                  >Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch
+                  Vọng, Cầu Giấy, Hà Nội</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <h6 class="footer-nav-title">Social</h6>
+              <div class="footer-social">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link"
+                    ><ion-icon name="logo-facebook"></ion-icon
+                  ></a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link"
+                    ><ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link"
+                    ><ion-icon name="logo-instagram"></ion-icon
+                  ></a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
