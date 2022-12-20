@@ -122,6 +122,9 @@
     }
   }
   &-action-btn {
+    span {
+      white-space: nowrap;
+    }
     @include flex(center, center);
     gap: 24px;
     & > button {

@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -19,6 +17,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>VCB Marathon</title>
   </head>
   <body>
@@ -144,40 +145,90 @@
       </header>
       <!-- BANNER END-->
 
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="banner-desc">
-              <div class="container flex">
-                <h4 class="banner-name fz-mobile">Vietcombank marathon</h4>
-                <p class="banner-name fz-mobile">Sài Gòn 2023</p>
-                <p class="banner-date">Ngày thi đấu: 12/03/2023</p>
-                <button type="button" class="banner-btn">
-                  Đăng ký giai đoạn Super Early Bird
-                </button>
-                <div class="banner-unit">
-                  <p class="banner-unit-desc">Đơn vị tổ chức</p>
-                  <div class="banner-unit-img">
-                    <div class="banner-unit-item">
-                      <img src="./assets/img/Logo.png" alt="unit" />
+      <div class="banner-wrapper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner-desc">
+                <div class="container flex banner-content">
+                  <h4 class="banner-name fz-mobile">Vietcombank marathon</h4>
+                  <p class="banner-name fz-mobile">Sài Gòn 2023</p>
+                  <p class="banner-date">Ngày thi đấu: 12/03/2023</p>
+                  <button type="button" class="banner-btn">
+                    Đăng ký giai đoạn Super Early Bird
+                  </button>
+                  <div class="banner-unit">
+                    <p class="banner-unit-desc">Đơn vị tổ chức</p>
+                    <div class="banner-unit-img">
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/Logo.png" alt="unit" />
+                      </div>
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/logo1.png" alt="unit" />
+                      </div>
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/logo2.png" alt="unit" />
+                      </div>
                     </div>
-                    <div class="banner-unit-item">
-                      <img src="./assets/img/logo1.png" alt="unit" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-desc">
+                <div class="container flex banner-content">
+                  <h4 class="banner-name fz-mobile">Vietcombank marathon</h4>
+                  <p class="banner-name fz-mobile">Sài Gòn 2023</p>
+                  <p class="banner-date">Ngày thi đấu: 12/03/2023</p>
+                  <button type="button" class="banner-btn">
+                    Đăng ký giai đoạn Super Early Bird
+                  </button>
+                  <div class="banner-unit">
+                    <p class="banner-unit-desc">Đơn vị tổ chức</p>
+                    <div class="banner-unit-img">
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/Logo.png" alt="unit" />
+                      </div>
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/logo1.png" alt="unit" />
+                      </div>
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/logo2.png" alt="unit" />
+                      </div>
                     </div>
-                    <div class="banner-unit-item">
-                      <img src="./assets/img/logo2.png" alt="unit" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-desc">
+                <div class="container flex banner-content">
+                  <h4 class="banner-name fz-mobile">Vietcombank marathon</h4>
+                  <p class="banner-name fz-mobile">Sài Gòn 2023</p>
+                  <p class="banner-date">Ngày thi đấu: 12/03/2023</p>
+                  <button type="button" class="banner-btn">
+                    Đăng ký giai đoạn Super Early Bird
+                  </button>
+                  <div class="banner-unit">
+                    <p class="banner-unit-desc">Đơn vị tổ chức</p>
+                    <div class="banner-unit-img">
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/Logo.png" alt="unit" />
+                      </div>
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/logo1.png" alt="unit" />
+                      </div>
+                      <div class="banner-unit-item">
+                        <img src="./assets/img/logo2.png" alt="unit" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-
-        <div class="swiper-pagination"></div>
       </div>
       <div class="banner-action container">
         <div class="banner-action-date">
@@ -191,15 +242,13 @@
         </div>
         <div class="banner-action-btn">
           <button id="prevSlide">
+            <span class="banner-pl"></span>
             <ion-icon name="arrow-back-outline"></ion-icon>
           </button>
-          <div class="banner-dot">
-            <span class="banner-dot-item active"></span>
-            <span class="banner-dot-item"></span>
-            <span class="banner-dot-item"></span>
-          </div>
+          <div class="swiper-pagination" style="position: static"></div>
+
           <button id="nextSlide">
-            <span class="banner-pl">Hà nội</span>
+            <span class="banner-pl"></span>
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </button>
         </div>

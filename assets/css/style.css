@@ -640,6 +640,9 @@ summary {
   justify-content: center;
   gap: 24px;
 }
+.banner-action-btn span {
+  white-space: nowrap;
+}
 .banner-action-btn > button {
   cursor: pointer;
   display: flex;
@@ -1234,6 +1237,36 @@ summary {
   .tc-item {
     width: 100%;
   }
+}
+
+.banner-wrapper .swiper-button-prev {
+  display: none;
+}
+
+.banner-wrapper .swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: static !important;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 50%;
+  width: auto;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  background-color: #999999 !important;
+  color: red;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #008047 !important;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
