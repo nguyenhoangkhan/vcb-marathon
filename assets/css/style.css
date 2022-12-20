@@ -1248,7 +1248,7 @@ summary {
 }
 
 .swiper-pagination {
-  position: static !important;
+  position: static;
 }
 
 .swiper-pagination-bullet {
@@ -1259,14 +1259,12 @@ summary {
   text-align: center;
   line-height: 30px;
   font-size: 12px;
-  background-color: #999999 !important;
-  color: red;
+  background-color: #999999;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #008047 !important;
-  color: red;
+  background-color: #008047;
 }
 
 /*# sourceMappingURL=style.css.map */
